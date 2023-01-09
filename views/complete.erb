@@ -57,7 +57,7 @@
             </div>
             <div class="mt-4 row border-bottom">
                 <p class="col-3">内容</p>
-                <p class="col-9"><%= params['content'] %></p>
+                <p class="col-9"><%= params['content'].gsub(/\r\n|\r|\n/, "<br>") %></p>
             </div>
             <form action="/" method="GET">
                 <div class="mt-4 text-center mb-4">
